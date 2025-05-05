@@ -1,9 +1,10 @@
 import React from 'react';
+import "../css/ItemListContainer.css";
 
 const ItemListContainer = ({ mensaje }) => {
     return (
-        <div className="p-6 text-center">
-            <h2 className="text-2xl font-semibold">{mensaje}</h2>
+        <div className="item-container">
+            <h2>{mensaje}</h2>
             {/* Aquí se renderizarán los productos más adelante */}
         </div>
     );

@@ -1,0 +1,13 @@
+.cart-widget {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-icon {
+    font-size: 20px;
+}
+
+.cart-count {
+    font-weight: bold;
+}
