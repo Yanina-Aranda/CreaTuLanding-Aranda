@@ -1,11 +1,32 @@
-import React from 'react';
+import { useEffect, useState } from "react";
+import { getProducts } from "../mock/AsyncService";
+import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 import "../css/ItemListContainer.css";
 
-const ItemListContainer = ({ mensaje }) => {
+const ItemListContainer = ({ greeting }) => {
+    const [data, setData] = useState([])
+    const { categoryId } = useParams()
+    console.log(categoryId)
+
+    useEffect(() => {
+        getProducts()
+            .then((respuesta) => {
+                if (categoryId) {
+                    //filtrar
+                    setData(respuesta.filter((prod) => prod.category === categoryId))
+                } else {
+                    //no filtro
+                    setData(respuesta)
+                }
+            })
+            .catch((error) => console.error(error))
+    }, [categoryId])
+
     return (
-        <div className="item-container">
-            <h2>{mensaje}</h2>
-            {/* Aquí se renderizarán los productos más adelante */}
+        <div>
+            <h1>{greeting}{categoryId && <span style={{ textTransform: 'capitalize' }}>{categoryId}</span>}</h1>
+            <ItemList data={data} />
         </div>
     );
 };

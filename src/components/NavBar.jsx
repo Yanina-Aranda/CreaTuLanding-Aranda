@@ -1,16 +1,19 @@
 import React from 'react';
 import CartWidget from './CartWidget';
+import { NavLink } from "react-router-dom";
 import "../css/NavBar.css";
 
 const NavBar = () => {
     return (
         <nav className="navbar">
-            <div className="logo">Origen Carpintería</div>
-            <ul className="nav-links">
-                <li><a href="#">Muebles</a></li>
-                <li><a href="#">Puertas y ventanas</a></li>
-                <li><a href="#">Decoración y acabados</a></li>
-            </ul>
+            <NavLink to='/'>
+                <img src="../logo.png" alt='logo' style={{ width: '8rem' }} />
+            </NavLink>
+            <div>
+                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: 'black', padding: 10 }} to="/category/muebles">Muebles</NavLink>
+                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: 'black', padding: 10 }} to="/category/puertas y ventanas">Puertas y ventanas</NavLink>
+                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: 'black', padding: 10 }} to="/category/terminacion y acabados">Terminacion y acabados</NavLink>
+            </div>
             <CartWidget />
         </nav>
     );
