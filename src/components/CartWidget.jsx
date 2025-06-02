@@ -7,8 +7,8 @@ const CartWidget = () => {
 
     return (
         <div className="cart-widget">
-            <ShoppingCart className="cart-icon" />
-            <span className="cart-count">{cartCount}</span>
+            <ShoppingCart className="cart-icon" style={{ color: '#432818' }} />
+            <span className="cart-count" style={{ color: '#432818' }}>{cartCount}</span>
         </div>
     );
 };

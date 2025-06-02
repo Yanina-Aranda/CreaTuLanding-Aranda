@@ -10,9 +10,9 @@ const NavBar = () => {
                 <img src="../logo.png" alt='logo' style={{ width: '8rem' }} />
             </NavLink>
             <div>
-                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: 'black', padding: 10 }} to="/category/muebles">Muebles</NavLink>
-                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: 'black', padding: 10 }} to="/category/puertas y ventanas">Puertas y ventanas</NavLink>
-                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: 'black', padding: 10 }} to="/category/terminacion y acabados">Terminacion y acabados</NavLink>
+                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: '#432818', padding: 10 }} to="/category/muebles">Muebles</NavLink>
+                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: '#432818', padding: 10 }} to="/category/puertas y ventanas">Puertas y ventanas</NavLink>
+                <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: '#432818', padding: 10 }} to="/category/terminacion y acabados">Terminacion y acabados</NavLink>
             </div>
             <CartWidget />
         </nav>

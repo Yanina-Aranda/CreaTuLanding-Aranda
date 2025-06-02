@@ -6,7 +6,7 @@ const ItemDetail = ({ detalle }) => {
         console.log(`Compraste ${cantidad} del item ${detalle.name}`)
     }
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h2>{detalle.name}</h2>
             <img src={detalle.img} alt={detalle.name} style={{ width: '200px', height: '150px' }} />
             <p>{detalle.description}</p>

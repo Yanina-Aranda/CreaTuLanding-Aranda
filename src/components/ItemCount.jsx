@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import "../css/ItemCount.css";
 //imports arriba del componente
 const ItemCount = ({ stock, onAdd }) => {
     //logica, funciones, hook
@@ -22,14 +23,14 @@ const ItemCount = ({ stock, onAdd }) => {
     // }
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
             <div>
-                <button onClick={restar}>-</button>
-                <span>{count}</span>
-                <button onClick={sumar}>+</button>
+                <button onClick={restar} >-</button>
+                <span style={{ margin: 17 }}>{count}</span>
+                <button onClick={sumar} >+</button>
             </div>
             {/* <button className='btn btn-primary' onClick={comprar} >Agregar al carrito</button> */}
-            <button onClick={() => onAdd(count)} >Agregar al carrito</button>
+            <button onClick={() => onAdd(count)} className="btn btn-primary" >Agregar al carrito</button>
         </div>
     )
 }
