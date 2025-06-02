@@ -8,7 +8,7 @@ const ItemDetail = ({ detalle }) => {
     return (
         <div>
             <h2>{detalle.name}</h2>
-            <img src={detalle.img} alt={detalle.name} />
+            <img src={detalle.img} alt={detalle.name} style={{ width: '200px', height: '150px' }} />
             <p>{detalle.description}</p>
             <p>${detalle.price}</p>
             <p>Stock:{detalle.stock} unidades</p>

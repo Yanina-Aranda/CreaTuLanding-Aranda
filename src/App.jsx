@@ -5,6 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Error from './components/Error';
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
