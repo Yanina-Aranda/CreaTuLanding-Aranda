@@ -13,7 +13,7 @@ Este proyecto es una tienda online desarrollada con **React** para una carpinter
 1. Cloná el repositorio:
    ```bash
    git clone https://github.com/Yanina-Aranda/CreaTuLanding-Aranda.git
-   cd tu-repo
+   cd CreaTuLanding-Aranda
 2. Haga el comando `cd crea-tu-landing-aranda` para moverse a la carpeta del proyecto
 3. Instale dependencias con el comando `npm install`
 4. Para levantar la app en el sevidor local ejecute el comando `npm run dev`
