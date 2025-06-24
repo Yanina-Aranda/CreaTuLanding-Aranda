@@ -14,7 +14,7 @@ const NavBar = () => {
                 <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: '#432818', padding: 10 }} to="/category/puertas y ventanas">Puertas y ventanas</NavLink>
                 <NavLink style={{ fontWeight: "bold", textDecoration: 'none', color: '#432818', padding: 10 }} to="/category/terminacion y acabados">Terminacion y acabados</NavLink>
             </div>
-            <CartWidget />
+            <NavLink to='/cart'><CartWidget /></NavLink>
         </nav>
     );
 };

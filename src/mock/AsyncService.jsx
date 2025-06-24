@@ -1,37 +1,33 @@
-const products = [
+export const products = [
     {
-        id: '01',
-        name: 'Random 1',
-        price: 1500,
-        description: 'lorem ipsums lore lorem',
+        name: 'Placar',
+        price: 150000,
+        description: 'Optimizá tu espacio con placares funcionales y elegantes. Diseñados a medida para adaptarse a tus necesidades y estilo.',
         stock: 10,
         img: 'https://i.postimg.cc/bJH3FxnD/cajones-de-madera.jpg',
         category: 'muebles'
     },
     {
-        id: '02',
-        name: 'Random 2',
-        price: 500,
-        description: 'lorem ipsums lore lorem',
+        name: 'Puerta',
+        price: 100000,
+        description: 'Aportá calidez y distinción a tus ambientes con puertas de madera maciza. Resistentes, duraderas y con terminaciones de calidad.',
         stock: 15,
         img: 'https://i.postimg.cc/90L1ccJc/carpintero-femenino-con-sierra-electrica.jpg',
         category: 'puertas y ventanas'
     },
     {
-        id: '03',
-        name: 'Random 3',
-        price: 8000,
+        name: 'Bajo mesada',
+        price: 180000,
         stock: 8,
-        description: 'lorem ipsums lore lorem',
+        description: 'Renová tu cocina con bajo mesadas prácticos y modernos. Diseño personalizado, materiales resistentes y máxima funcionalidad.',
         img: 'https://i.postimg.cc/bJH3FxnD/cajones-de-madera.jpg',
         category: 'muebles'
     },
     {
-        id: '04',
-        name: 'Random 4',
-        price: 9000,
+        name: 'Marcos y molduras',
+        price: 95000,
         stock: 18,
-        description: 'lorem lore lorem',
+        description: 'Dale un toque único a tus espacios con marcos y molduras de madera. Detalles que transforman cualquier ambiente.',
         img: 'https://i.postimg.cc/sgQKRdSR/cierra.jpg',
         category: 'terminacion y acabados'
     }
